@@ -24,10 +24,9 @@ body{
 
 /* OVERLAY SUPAYA TEKS TERLIHAT */
 .overlay{
-    background:rgba(255,255,255,0.85);
-    padding:10px;
-    max-width:420px;
-    margin:auto;
+background:rgba(0,0,0,0.85);
+padding:20px;
+color:white;
 }
 
 /* LOGO */
@@ -66,16 +65,16 @@ nav a{
 }
 
 .produk{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .card{
     background:white;
     padding:15px;
     border-radius:10px;
-    width:100px;
+    width:200px;
     box-shadow:0 0 10px rgba(0,0,0,0.1);
     text-align:center;
 }
@@ -125,6 +124,7 @@ footer{
 <a href="#kontak">Kontak</a>
 </nav>
 
+<div class="container">
 <div class="overlay">
 
 <h2 id="produk">Produk Kami</h2>
@@ -206,7 +206,7 @@ Instagram
 </a> |
 
 <a href="#">
-<img src="imagemedsos/fb.png" width="25">
+<img src="imagemedsos/fb.png" width="30">
 Facebook
 </a> |
 
