@@ -1,13 +1,13 @@
 header{
 text-align:center;
 padding:20px;
-}	
+}
 
 .judul h1{
 margin:0;
 animation:glow 2s infinite;
 font-family:'Sacramento', cursive;
-font-size:50px;
+font-size:40px;
 font-weight:bold;
 color:white;
 letter-spacing:2px;
@@ -15,31 +15,51 @@ text-shadow:
 0 0 5px #fff,
 0 0 10px #ffd700,
 0 0 20px #ffd700;
-margin:0;
 }
 
+/* BODY */
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+display:flex;
+justify-content:center;
+}
+
+/* BATASI LEBAR HALAMAN */
+.overlay, header, nav, footer{
+max-width:420px;
+width:100%;
+margin:auto;
+}
+
+/* CEGAH HALAMAN MELEBAR */
+html, body{
+overflow-x:hidden;
+}
+
+*{
+box-sizing:border-box;
+}
+
+/* MENU */
 nav{
 background:transparent !important;
+text-align:center;
 }
 
-/* menu */
 nav a{
 color:black !important;
 text-decoration:none;
-margin:0 20px;
+margin:0 15px;
 font-weight:bold;
-font-size:18px;
-letter-spacing:1px;
+font-size:16px;
 position:relative;
 transition:0.3s;
 }
 
-/* efek hover */
-nav a:hover{
-color:#ffd700;
-}
+nav a:hover
 
-/* garis animasi */
 nav a::after{
 content:"";
 position:absolute;
@@ -55,66 +75,66 @@ nav a:hover::after{
 width:100%;
 }
 
-
+/* CONTAINER */
 .container{
-width:90%;
-margin:auto;
-padding:20px;
+width:100%;
+padding:10px;
 background:rgba(255,255,255,0.2);
 backdrop-filter:blur(8px);
 border-radius:10px;
 }
 
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f5f5f5;
+/* PRODUK GRID */
+.produk{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+width:100%;
 }
 
+/* CARD PRODUK */
 .card{
-background:rgba(255,255,255,0.85);
-padding:15px;
-border-radius:15px;
-width:200px;
+background:rgba(255,255,255,0.9);
+padding:10px;
+border-radius:12px;
+width:100%;
 text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transform:translateY(-5px);
 }
 
 .card img{
 width:100%;
-border-radius:10px;
-transition:0.3s;
-}
-
-.card:hover img{
-transform:scale(1.05);
+height:80px;
+object-fit:cover;
+border-radius:8px;
 }
 
 .card h3{
-margin:10px 0 5px;
+margin:8px 0 4px;
+font-size:13px;
 }
 
 .card p{
 color:#2c7a2c;
 font-weight:bold;
-font-size:16px;
+font-size:12px;
 }
 
+/* PROMO */
 .promo{
 background:rgba(255,255,255,0.2);
 backdrop-filter:blur(5px);
 padding:10px;
 border-radius:10px;
 text-align:center;
+overflow:hidden;
 }
 
-/* teks berjalan */
 .promo-text{
 display:inline-block;
 white-space:nowrap;
@@ -122,7 +142,6 @@ padding-left:100%;
 animation:jalan 12s linear infinite;
 }
 
-/* efek neon */
 .glow-text{
 color:white;
 text-shadow:
@@ -134,62 +153,31 @@ animation:blink 1s infinite alternate;
 }
 
 @keyframes jalan{
-0%{
-transform:translateX(0);
-}
-100%{
-transform:translateX(-100%);
-}
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
 }
 
 @keyframes blink{
-0%{
-opacity:0.5;
-}
-100%{
-opacity:1;
+0%{opacity:0.5;}
+100%{opacity:1;}
 }
 
-/* =================================
-LAYOUT SMARTPHONE CENTER
-================================= */
-
-/* pusatkan halaman */
-body{
-margin:0;
+/* HEADER BOX */
+.header-box{
 display:flex;
-justify-content:center;
+flex-direction:column;
+align-items:center;
 }
 
-/* lebar maksimal layar hp */
-.overlay, header, nav, footer{
-max-width:420px;
-width:100%;
-margin:auto;
-}
+/* RESPONSIVE SMARTPHONE */
+@media screen and (max-width:768px){
 
-/* produk grid */
-@media screen and (max-width:375px){
-
-.produk{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-}
-
-.card{
-    background:white;
-    padding:12px;
-    border-radius:10px;
-    width:100%;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-    text-align:center;
+.overlay{
+padding:10px;
 }
 
 .card img{
-width:100%;
-height:80px;
-object-fit:cover;
+height:75px;
 }
 
 .card h3{
@@ -200,41 +188,4 @@ font-size:12px;
 font-size:11px;
 }
 
-}
-
-/* RESPONSIVE SMARTPHONE */
-@media screen and (max-width:768px){
-
-.overlay{
-padding:10px;
-}
-
-.produk{
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-}
-
-.card img{
-height:80px;
-object-fit:cover;
-}
-
-.card h3{
-font-size:13px;
-}
-
-.card p{
-font-size:12px;
-}
-
-}
-
-header{
-text-align:center;
-}
-
-.header-box{
-display:flex;
-flex-direction:column;
-align-items:center;
 }
