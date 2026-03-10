@@ -150,131 +150,84 @@ opacity:0.5;
 opacity:1;
   
 }
-/* ================================
-TAMPILAN SMARTPHONE MODERN
-================================ */
-@media (max-width:768px){
+/* ============================= */
+/* RESPONSIVE SMARTPHONE FIX */
+/* ============================= */
+@media screen and (max-width:768px){
 
-body{
-background-size:cover;
+/* container */
+.container{
+width:95%;
+padding:10px;
 }
 
-/* HEADER MODERN */
-header{
-padding:18px 10px;
-border-bottom-left-radius:20px;
-border-bottom-right-radius:20px;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
+/* menu */
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
+nav a{
+margin:5px;
+padding:8px 12px;
+font-size:14px;
+}
+
+/* produk grid */
+.produk{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+/* card produk */
+.card{
+width:100%;
+padding:10px;
+}
+
+/* gambar produk */
+.card img{
+width:100%;
+height:110px;
+object-fit:cover;
+}
+
+/* teks */
+.card h3{
+font-size:15px;
+}
+
+.card p{
+font-size:13px;
+}
+
+/* header */
 header h1{
 font-size:22px;
-margin:5px 0;
 }
 
 header p{
 font-size:13px;
-opacity:0.9;
 }
 
 .logo{
 width:55px;
 }
 
-/* MENU SEPERTI TOMBOL */
-nav{
-display:flex;
-justify-content:center;
-gap:8px;
-flex-wrap:wrap;
-}
-
-nav a{
-background:#2e7d32;
-padding:8px 14px;
-border-radius:20px;
-font-size:14px;
-transition:0.3s;
-}
-
-nav a:hover{
-background:#43a047;
-transform:scale(1.05);
-}
-
-/* PRODUK GRID MODERN */
-.produk{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:14px;
-margin-top:10px;
-}
-
-/* CARD PRODUK */
-.card{
-width:100%;
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 6px 15px rgba(0,0,0,0.15);
-transition:0.25s;
-padding:10px;
-}
-
-.card:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 20px rgba(0,0,0,0.25);
-}
-
-/* GAMBAR PRODUK */
-.card img{
-width:100%;
-height:120px;
-object-fit:cover;
-border-radius:10px;
-}
-
-/* NAMA PRODUK */
-.card h3{
-font-size:15px;
-margin:8px 0 4px 0;
-}
-
-/* HARGA PRODUK */
-.card p{
-font-size:14px;
-font-weight:bold;
-color:#2e7d32;
-}
-
-/* KONTAK */
-#kontak{
-margin-top:25px;
-}
-
-#kontak p{
-font-size:14px;
-}
-
-/* SOSIAL MEDIA MODERN */
+/* sosial media */
 #kontak a{
-display:inline-flex;
-align-items:center;
-gap:5px;
-background:white;
-padding:6px 10px;
-border-radius:10px;
-box-shadow:0 3px 8px rgba(0,0,0,0.15);
-margin:4px;
-font-size:13px;
+display:inline-block;
+margin:5px;
 }
-
-/* FOOTER */
-footer{
-font-size:13px;
-padding:15px;
+img{
+max-width:100%;
+height:auto;
 }
 
 }
+
+
 
 
