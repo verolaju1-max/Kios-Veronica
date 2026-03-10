@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kios Vero</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
+
+/* BACKGROUND TAMBAHAN */
+body{
+    background-image:url("imagebg/bg.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* OVERLAY SUPAYA TEKS TERLIHAT */
+.overlay{
+    background:rgba(255,255,255,0.85);
+    padding:20px;
+}
+
+/* LOGO */
+.logo{
+    width:70px;
+    display:block;
+    margin:auto;
+    margin-bottom:10px;
+}
+
+header{
+    background:rgba(0,0,0,0.7);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#1f5a1f;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+    color:white;
+}
+
+.produk{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    width:200px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="header-box">
+
+<img src="imagelg/logo.png" class="logo">
+
+<div class="judul">
+<h1>Kios Veronica</h1>
+<p>Kebutuhan harian lengkap & terpercaya</p>
+</div>
+
+</div>
+</header>
+
+<div class="promo-banner">
+<div class="promo-text">
+<span class="glow-text">
+🔥 Promo Hari Ini 🔥 Diskon Beras 10% | Gula Pasir Harga Spesial | Minyak Goreng Murah
+</span>
+</div>
+</div>
+
+<nav class="menu">
+<a href="#">Beranda</a>
+<a href="#produk">Produk</a>
+<a href="#kontak">Kontak</a>
+</nav>
+
+<div class="overlay">
+
+<h2 id="produk">Produk Kami</h2>
+
+<div class="produk">
+
+<div class="card">
+<img src="image/beras.jpg">
+<h3>Beras</h3>
+<p>Rp 65.000 / 5kg</p>
+</div>
+
+<div class="card">
+<img src="image/gula.jpg">
+<h3>Gula</h3>
+<p>Rp 17.000 / kg</p>
+</div>
+
+<div class="card">
+<img src="image/minyak.jpg">
+<h3>Minyak Goreng</h3>
+<p>Rp 20.000 / liter</p>
+</div>
+
+<div class="card">
+<img src="image/telur.jpg">
+<h3>Telur Ayam</h3>
+<p>Rp 30.000 / kg</p>
+</div>
+
+<div class="card">
+<img src="image/tepung.jpg">
+<h3>Tepung Terigu</h3>
+<p>Rp 12.000 / kg</p>
+</div>
+
+<div class="card">
+<img src="image/gaslpg.jpg">
+<h3>Gas LPG 3kg</h3>
+<p>Rp 20.000</p>
+</div>
+
+<div class="card">
+<img src="image/galon.jpg">
+<h3>Air Galon</h3>
+<p>Rp 8.000</p>
+</div>
+
+<div class="card">
+<img src="image/garam.jpg">
+<h3>Garam Dapur</h3>
+<p>Rp 3.000</p>
+</div>
+
+<div class="card">
+<img src="image/teh.jpg">
+<h3>Teh Celup</h3>
+<p>Rp 7.000</p>
+</div>
+
+<div class="card">
+<img src="image/kopi.jpg">
+<h3>Kopi Bubuk</h3>
+<p>Rp 10.000</p>
+</div>
+
+</div>
+
+<h2 id="kontak">Kontak Kami</h2>
+<p>📍 Alamat: Jl.Pandu- Wori Kecamatan Bunaken</p>
+<p>📞 WhatsApp: 0812-3456-7584</p>
+
+<h3>Media Sosial</h3>
+<p>
+
+<a href="#">
+<img src="imagemedsos/ig.png" width="25">
+Instagram
+</a> |
+
+<a href="#">
+<img src="imagemedsos/fb.png" width="25">
+Facebook
+</a> |
+
+<a href="#">
+<img src="imagemedsos/tt.png" width="25">
+TikTok
+</a>
+
+</p>
+
+</div>
+
+<footer>
+<p>© 2026 Toko Sembako Murah</p>
+</footer>
+
+</body>
+</html>
