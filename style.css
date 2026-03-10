@@ -163,3 +163,24 @@ opacity:0.5;
 100%{
 opacity:1;
 }
+
+/* Tampilan smartphone */
+@media (max-width:600px){
+
+.produk{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+justify-content:center;
+}
+
+.card{
+width:100%;
+}
+
+.overlay{
+width:95%;
+padding:15px;
+}
+
+}
