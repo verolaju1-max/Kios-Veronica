@@ -151,56 +151,49 @@ opacity:1;
 }
 
 /* =================================
-RESPONSIVE SMARTPHONE
+LAYOUT SMARTPHONE CENTER
 ================================= */
-@media screen and (max-width:768px){
 
-/* header */
-header{
-padding:15px;
-}
-
-.logo{
-width:55px;
-}
-
-/* menu */
-nav{
+/* pusatkan halaman */
+body{
+margin:0;
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
 }
 
-nav a{
-margin:5px;
-font-size:14px;
+/* lebar maksimal layar hp */
+.overlay, header, nav, footer{
+max-width:420px;
+width:100%;
+margin:auto;
 }
 
-/* produk */
+/* produk grid */
+@media screen and (max-width:375px){
+
 .produk{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:10px;
+gap:12px;
 }
 
-/* card produk */
 .card{
-width:100%;
-padding:8px;
-border-radius:10px;
+    background:white;
+    padding:12px;
+    border-radius:10px;
+    width:100%;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
 }
 
-/* gambar produk */
 .card img{
 width:100%;
-height:85px;
+height:80px;
 object-fit:cover;
 }
 
-/* teks produk */
 .card h3{
 font-size:12px;
-margin:5px 0;
 }
 
 .card p{
@@ -208,11 +201,40 @@ font-size:11px;
 }
 
 }
-.produk{
-display:grid !important;
-grid-template-columns:repeat(3,1fr) !important;
+
+/* RESPONSIVE SMARTPHONE */
+@media screen and (max-width:768px){
+
+.overlay{
+padding:10px;
 }
 
-.card{
-width:100% !important;
+.produk{
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.card img{
+height:80px;
+object-fit:cover;
+}
+
+.card h3{
+font-size:13px;
+}
+
+.card p{
+font-size:12px;
+}
+
+}
+
+header{
+text-align:center;
+}
+
+.header-box{
+display:flex;
+flex-direction:column;
+align-items:center;
 }
