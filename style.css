@@ -150,76 +150,33 @@ opacity:0.5;
 opacity:1;
 }
 
-/* ============================= */
-/* RESPONSIVE SMARTPHONE FIX */
-/* ============================= */
-@media screen and (max-width:768px){
+/* =========================
+PRODUK 3 KOLOM DI SMARTPHONE
+========================= */
+@media (max-width:768px){
 
-/* container */
-.container{
-width:95%;
-padding:10px;
-}
-
-/* menu */
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-nav a{
-margin:5px;
-padding:8px 12px;
-font-size:14px;
-}
-
-/* produk grid */
 .produk{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
 }
 
-/* card produk */
 .card{
 width:100%;
 padding:10px;
 }
 
-/* gambar produk */
 .card img{
-width:100%;
-height:110px;
+height:90px;
 object-fit:cover;
 }
 
-/* teks */
 .card h3{
-font-size:15px;
+font-size:13px;
 }
 
 .card p{
-font-size:13px;
-}
-
-/* header */
-header h1{
-font-size:22px;
-}
-
-header p{
-font-size:13px;
-}
-
-.logo{
-width:55px;
-}
-
-/* sosial media */
-#kontak a{
-display:inline-block;
-margin:5px;
+font-size:12px;
 }
 img{
 max-width:100%;
