@@ -150,14 +150,21 @@ opacity:0.5;
 opacity:1;
   
 }
-/* =========================
-RESPONSIVE SMARTPHONE
-========================= */
+/* ================================
+TAMPILAN SMARTPHONE MODERN
+================================ */
 @media (max-width:768px){
 
-/* HEADER */
+body{
+background-size:cover;
+}
+
+/* HEADER MODERN */
 header{
-padding:15px;
+padding:18px 10px;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 header h1{
@@ -167,90 +174,99 @@ margin:5px 0;
 
 header p{
 font-size:13px;
+opacity:0.9;
 }
 
 .logo{
 width:55px;
 }
 
-/* MENU */
+/* MENU SEPERTI TOMBOL */
 nav{
 display:flex;
-flex-direction:column;
+justify-content:center;
 gap:8px;
+flex-wrap:wrap;
 }
 
 nav a{
-display:block;
 background:#2e7d32;
-padding:10px;
-border-radius:8px;
-margin:0;
+padding:8px 14px;
+border-radius:20px;
+font-size:14px;
 transition:0.3s;
 }
 
-nav a:hover
-
-/* PROMO BANNER */
-.promo-banner{
-padding:8px;
-text-align:center;
+nav a:hover{
+background:#43a047;
+transform:scale(1.05);
 }
 
-.promo-text{
-font-size:14px;
-}
-
-/* PRODUK GRID */
+/* PRODUK GRID MODERN */
 .produk{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:12px;
+gap:14px;
+margin-top:10px;
 }
 
 /* CARD PRODUK */
 .card{
 width:100%;
-padding:12px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.15);
-transition:0.3s;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+transition:0.25s;
+padding:10px;
 }
 
 .card:hover{
-transform:scale(1.03);
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
 }
 
 /* GAMBAR PRODUK */
 .card img{
+width:100%;
 height:120px;
 object-fit:cover;
+border-radius:10px;
 }
 
-/* JUDUL PRODUK */
+/* NAMA PRODUK */
 .card h3{
-font-size:16px;
-margin:8px 0 5px 0;
+font-size:15px;
+margin:8px 0 4px 0;
 }
 
+/* HARGA PRODUK */
 .card p{
 font-size:14px;
-color:#2e7d32;
 font-weight:bold;
+color:#2e7d32;
 }
 
 /* KONTAK */
+#kontak{
+margin-top:25px;
+}
+
 #kontak p{
 font-size:14px;
 }
 
-/* SOSIAL MEDIA */
+/* SOSIAL MEDIA MODERN */
 #kontak a{
-display:inline-block;
-margin:5px;
+display:inline-flex;
+align-items:center;
+gap:5px;
+background:white;
 padding:6px 10px;
-background:#f1f1f1;
-border-radius:8px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
+margin:4px;
+font-size:13px;
 }
 
 /* FOOTER */
@@ -258,16 +274,6 @@ footer{
 font-size:13px;
 padding:15px;
 }
-
-.card{
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
-}
-
 
 }
 
