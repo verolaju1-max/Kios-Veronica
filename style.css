@@ -148,4 +148,116 @@ opacity:0.5;
 }
 100%{
 opacity:1;
+  
 }
+/* =========================
+RESPONSIVE SMARTPHONE
+========================= */
+@media (max-width:768px){
+
+/* HEADER */
+header{
+padding:15px;
+}
+
+header h1{
+font-size:22px;
+margin:5px 0;
+}
+
+header p{
+font-size:13px;
+}
+
+.logo{
+width:55px;
+}
+
+/* MENU */
+nav{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+nav a{
+display:block;
+background:#2e7d32;
+padding:10px;
+border-radius:8px;
+margin:0;
+transition:0.3s;
+}
+
+nav a:hover
+
+/* PROMO BANNER */
+.promo-banner{
+padding:8px;
+text-align:center;
+}
+
+.promo-text{
+font-size:14px;
+}
+
+/* PRODUK GRID */
+.produk{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+/* CARD PRODUK */
+.card{
+width:100%;
+padding:12px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+/* GAMBAR PRODUK */
+.card img{
+height:120px;
+object-fit:cover;
+}
+
+/* JUDUL PRODUK */
+.card h3{
+font-size:16px;
+margin:8px 0 5px 0;
+}
+
+.card p{
+font-size:14px;
+color:#2e7d32;
+font-weight:bold;
+}
+
+/* KONTAK */
+#kontak p{
+font-size:14px;
+}
+
+/* SOSIAL MEDIA */
+#kontak a{
+display:inline-block;
+margin:5px;
+padding:6px 10px;
+background:#f1f1f1;
+border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+font-size:13px;
+padding:15px;
+}
+
+}
+
